@@ -9,8 +9,8 @@
     <update id="updateStudentStatus" parameterType="student" >
         update student
         <set>
-            <if test="status != null">
-                status = #{status},
+            <if test="statuss != null">
+                statuss = #{statuss},
             </if>
         </set>
         where sname = #{sname}
@@ -40,7 +40,7 @@
             gender,
             addr,
             code,
-            status,
+            statuss,
             password,
             dept.deptname dept_id
         FROM
@@ -59,7 +59,7 @@
             gender,
             addr,
             code,
-            status,
+            statuss,
             password,
             dept.deptname dept_id
         FROM
@@ -76,7 +76,7 @@
             gender,
             addr,
             code,
-            status,
+            statuss,
             password,
             dept.deptname dept_id
         FROM

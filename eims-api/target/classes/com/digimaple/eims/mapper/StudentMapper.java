@@ -26,7 +26,7 @@ public interface StudentMapper {
     //通过用户id查询，返回数组
     public  Student findStudentById(String password);
     //name 查询，返回object形式
-    public Student findByStudentname(String sname, String st_pwd);
+    public Student findByStudentname(String sname, String stpwd);
 
 
     //单框模糊查询
@@ -55,7 +55,7 @@ public interface StudentMapper {
     Page<Student> getStudentList();
 
     //设置用户登录状态
-    public int updateStudentStatus(String sname, int status);
+    public int updateStudentStatus(String sname, int statuss);
 
     //登录验证
     public int tologin(PwdDTO pwdDTO);

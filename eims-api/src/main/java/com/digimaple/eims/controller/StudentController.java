@@ -62,7 +62,8 @@ public class StudentController {
             Cookie cookie = new Cookie("token", token);
             cookie.setPath("/");
             response.addCookie(cookie);
-            return ResponseEntity.ok(token);
+           // return ResponseEntity.ok(token);
+            return ResponseEntity.ok(cookie);
         }
     }
 
