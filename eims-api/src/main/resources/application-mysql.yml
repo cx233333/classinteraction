@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/classinteraction?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+    hikari:
+      #最小链接数
+      minimum-idle: 30
+      #最大连接数
+      maximum-pool-size: 500
+      #updates是否自动提交
+      auto-commit: false
+      #指定连接多久没被使用时，被设置为空闲，默认为10ms
+      idle-timeout: 10000
+      pool-name: DatebookHikariCP
+      #指定连接池中连接的最大生存时间，毫秒单位.
+      max-lifetime: 1800000
+      #指定连接的超时时间，毫秒单位.
+      connection-timeout: 30000
+      #校验连接合法性执行的sql语句
+      connection-test-query: SELECT 1
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    timeout: 60s  # 数据库连接超时时间，2.0 中该参数的类型为Duration，这里在配置的时候需要指明单位
+    # 连接池配置，2.0中直接使用jedis或者lettuce配置连接池
+    jedis:
+      pool:
+        # 最大空闲连接数
+        max-idle: 500
+        # 最小空闲连接数
+        min-idle: 50
+        # 等待可用连接的最大时间，负数为不限制
+        max-wait:  -1s
+        # 最大活跃连接数，负数为不限制
+        max-active: -1
+
+#pagehelper分页插件配置
+pagehelper:
+  helperDialect: mysql

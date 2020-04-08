@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    include: mysql
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.digimaple.eims.model
+  configuration:
+    map-underscore-to-camel-case: true
+server:
+  port: 8877

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.digimaple.eims.mapper.StudentMapper">
+
+    <!-- 登录 和退出 -->
+    <select id="tologin" resultType="int" parameterType="string" >
+        select count(stid) from student where sname like #{sname}  and stpwd like #{stpwd}
+    </select>
+    <update id="updateStudentStatus" parameterType="student" >
+        update student
+        <set>
+            <if test="status != null">
+                status = #{status},
+            </if>
+        </set>
+        where sname = #{sname}
+    </update>
+
+    <!-- 用户列表 -->
+    <select id="selectAll" resultType="student" parameterType="long">
+        SELECT
+            student.stid,
+
+            gender,
+            sNo,sname,phone,
+            gender,
+            classname,
+            xyname,
+            stpwd
+        FROM
+            student
+        order by student.stid asc
+    </select>
+
+    <!-- sql分页用户列表 -->
+    <select id="querystudentBySql" resultType="student" parameterType="int">
+        SELECT
+            student.id,
+            name, tel,
+            gender,
+            addr,
+            code,
+            status,
+            password,
+            dept.deptname dept_id
+        FROM
+            student left join dept
+        on
+            student.dept_id = dept.id
+        order by student.id asc
+        limit #{currPage}, #{pageSize}
+    </select>
+
+    <!-- 拦截器分页用户列表 -->
+    <select id="querystudentByPage" resultType="student" parameterType="map">
+        SELECT
+            student.id,
+            name, tel,
+            gender,
+            addr,
+            code,
+            status,
+            password,
+            dept.deptname dept_id
+        FROM
+            student left join dept
+        on
+            student.dept_id = dept.id
+        order by student.id asc
+    </select>
+    <!-- PageHelper分页用户列表 -->
+    <select id="getstudentList" resultType="student" parameterType="long">
+        SELECT
+            student.id,
+            name, tel,
+            gender,
+            addr,
+            code,
+            status,
+            password,
+            dept.deptname dept_id
+        FROM
+            student left join dept
+        on
+            student.dept_id = dept.id
+        order by student.id asc
+    </select>
+    <!-- 通过用户id 查询，返回列表 -->
+    <select id="selectByPrimaryKey" resultType="student" parameterType="long">
+        SELECT
+            student.stid,
+            sNo,sname,phone,
+            gender,
+            classname,
+            xyname,
+            stpwd
+        FROM
+            student
+        WHERE
+            student.stid = #{stid}
+    </select>
+
+    <!-- 通过用户id查询，返回数组  -->
+    <select id="findstudentById" resultType="student" parameterType="string">
+        SELECT
+        * from student
+        WHERE
+            student.stid = #{password}
+    </select>
+
+    <!--  -->
+    <select id="findByStudentname" resultType="student" parameterType="string">
+        SELECT * from student   WHERE
+            student.sname like "%"#{sname}"%" or student.sNo like "%"#{sname}"%"  and student.stpwd = #{stpwd}
+    </select>
+
+    <!-- 按name查询，返回数组形式 -->
+    <select id="selectByName" resultType="student" parameterType="string">
+        SELECT
+            student.stid,
+        sNo,sname,phone,
+            gender,
+            classname,
+            xyname,
+            stpwd
+        FROM
+            student
+        WHERE
+            student.sname = #{sname}
+    </select>
+
+    <!-- 按部门名称查询 -->
+<!--    <select id="selectByDept" resultType="student" parameterType="string">-->
+<!--        SELECT-->
+<!--            student.id,-->
+<!--            name, tel,-->
+<!--            gender,-->
+<!--            addr,-->
+<!--            code,-->
+<!--            status,-->
+<!--            password,-->
+<!--            dept.deptname dept_id-->
+<!--        FROM-->
+<!--            dept left join student-->
+<!--        on-->
+<!--            student.dept_id = dept.id-->
+<!--        WHERE-->
+<!--            dept.deptname = #{deptname}-->
+
+<!--    </select>-->
+
+    <!-- 插入 -->
+    <insert id="insert" parameterType="student">
+        insert into student
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="sname != null">sname,</if>
+            <if test="sNo != null">sNo,</if>
+            <if test="gender != null">gender,</if>
+            <if test="phone != null">phone,</if>
+            <if test="classname != null">classname,</if>
+            <if test="xyname != null">xyname,</if>
+            <if test="stpwd != null">stpwd,</if>
+            <if test="types != null">types,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="sname != null">#{sname},</if>
+            <if test="sNo != null">#{sNo},</if>
+            <if test="gender != null">#{gender},</if>
+            <if test="phone != null">#{phone},</if>
+            <if test="classname != null">#{classname},</if>
+            <if test="xyname != null">#{xyname},</if>
+            <if test="stpwd != null">#{stpwd},</if>
+            <if test="types != null">#{types},</if>
+
+        </trim>
+    </insert>
+
+    <!-- 按id删除 -->
+    <delete id="deleteByPrimaryKey"  parameterType="long" >
+        delete from student where id = #{id}
+    </delete>
+
+    <delete id="deleteMany" parameterType="int" >
+         delete from student where id in
+         <foreach item="ids" collection="array"  open="(" separator="," close=")">
+            #{ids}
+         </foreach>
+    </delete>
+
+    <!-- 修改 -->
+    <update id="updateByPrimaryKeySelective" parameterType="student">
+        update student
+        <set>
+            <if test="sname != null">
+                name = #{sname},
+            </if>
+            <if test="phone != null">
+                phone = #{phone},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="classname != null">
+                classname = #{classname},
+            </if>
+            <if test="xyname != null">
+                xyname = #{xyname},
+            </if>
+
+        </set>
+        where id = #{id}
+    </update>
+
+    <!-- 修改用户密码 -->
+    <update id="updateByStudentName" parameterType="student">
+        update student
+        <set>
+            <if test="stpwd != null">
+                stpwd = #{stpwd},
+            </if>
+        </set>
+        where sname = #{sname} or sNo = #{sname}
+    </update>
+
+    <!-- 查询用户总数 -->
+    <select id="selectStudentListCount" parameterType="int" resultType="int">
+        select count(stid) from student
+    </select>
+
+    <!-- 查询用户男女占比 -->
+    <select id="selectStudentGenderCount" parameterType="int" resultType="double">
+        select count(case when gender='男' then 1 end)/count(case when gender='女' then 1 end)  from student;
+    </select>
+
+    <!-- SQL片段 -->
+<!--    <sql id = "selectstudentListWhere">-->
+<!--        <where>-->
+<!--            1=1-->
+<!--            <if test="name != null" >and ifnull(student.name,'') like "%"#{name}"%"</if>-->
+<!--            <if test="tel != null" >and ifnull(student.tel,'') like "%"#{tel}"%"</if>-->
+<!--            <if test="gender != null" >and ifnull(student.gender,'') like "%"#{gender}"%"</if>-->
+<!--            <if test="addr != null" >and ifnull(student.addr,'') like "%"#{addr}"%"</if>-->
+<!--            <if test="code != null" >and ifnull(student.code,'') like "%"#{code}"%"</if>-->
+<!--            <if test="status != null" >and ifnull(student.status,'') like "%"#{status}"%"</if>-->
+<!--            <if test="deptId != null" >and ifnull(dept.deptname,'') like "%"#{deptId}"%"</if>-->
+
+<!--        </where>-->
+<!--    </sql>-->
+
+    <!-- 多框精确查询 -->
+<!--    <select id="selectByOne" resultType="student" parameterType="long">-->
+<!--        SELECT-->
+<!--            student.stid,-->
+<!--        sNo,sname,phone,-->
+<!--        gender,-->
+<!--        classname,-->
+<!--        xyname,-->
+<!--        st_pwd-->
+<!--        FROM-->
+<!--            student-->
+<!--        -->
+<!--        <include refid="selectstudentListWhere"/>-->
+<!--    </select>-->
+
+    <!-- SQL片段 -->
+    <sql id = "selectStudentListWhereByAnyone"  >
+        <where>
+            1=1
+            <if test="_parameter != null"> and ifnull(student.sname,'') like "%"#{_parameter}"%"
+            or ifnull(student.sNo,'') like "%"#{_parameter}"%"
+            or ifnull(student.gender,'') like "%"#{_parameter}"%"
+            or ifnull(student.classname,'') like "%"#{_parameter}"%"
+            or ifnull(student.xyname,'') like "%"#{_parameter}"%"
+            or ifnull(student.statuss,'') like "%"#{_parameter}"%"
+
+            </if>
+
+        </where>
+    </sql>
+
+    <!-- 单框模糊查询 -->
+    <select id="selectByAnyone" resultType="student" parameterType="string" >
+        SELECT
+        student.stid,
+        sNo,sname,phone,
+        gender,
+        classname,
+        xyname,
+        stpwd
+        FROM
+        student
+        <include refid="selectStudentListWhereByAnyone"/>
+    </select>
+
+<!--    <select id="findDId" resultType="Dept" parameterType="string" >-->
+<!--        SELECT-->
+<!--            count(id) id, id deptname-->
+<!--        FROM-->
+<!--        dept-->
+<!--        where deptname = #{deptname}-->
+<!--    </select>-->
+
+
+    <!-- 通过用户名称或账号动态获取菜单栏  -->
+<!--    <select id="getUrpList" resultType="Power" parameterType="string">-->
+<!--        select p.id id, p.name name, p.url url-->
+<!-- from power p, RPTable rp, role r-->
+<!--    where r.id = rp.rid and rp.poid = p.id and r.id in-->
+<!--        (select  r.id  from URTable ur-->
+<!--            left join student u on u.id = ur.uid-->
+<!--            left join role r on r.id=ur.rid-->
+<!--            where  u.code = #{name} or u.name like #{name})-->
+
+<!--    </select>-->
+
+<!--    <select id="queryMenuList" resultType="Power" parameterType="string">-->
+
+<!--    select distinct id, name, url ,pid from power-->
+<!--        where id in-->
+<!--            (select distinct p.id id-->
+<!--                from power p, RPTable rp, dept r-->
+<!--                where r.id = rp.rid and rp.poid = p.id and r.id in-->
+<!--                    (select  r.id  from URTable ur-->
+<!--                        left join student u on u.id = ur.uid-->
+<!--                        left join dept r on r.id=ur.rid-->
+<!--                        where  u.code like #{name} or u.name like #{name}-->
+<!--                    )-->
+<!--            )-->
+<!--            or id in-->
+<!--            (select distinct pid from power  where id in-->
+<!--                    (select distinct p.id id-->
+<!--                        from power p, RPTable rp, dept r-->
+<!--                        where r.id = rp.rid and rp.poid = p.id and r.id in-->
+<!--                            (select  r.id  from URTable ur-->
+<!--                                left join student u on u.id = ur.uid-->
+<!--                                left join dept r on r.id=ur.rid-->
+<!--                                where  u.code like #{name} or u.name like #{name}-->
+<!--                            )-->
+<!--                    )-->
+<!--            )-->
+<!--    </select>-->
+</mapper>
