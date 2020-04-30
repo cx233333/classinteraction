@@ -8,71 +8,49 @@ import com.digimaple.eims.model.dto.StudentDTO;
 import com.digimaple.eims.utils.PageBean;
 import com.github.pagehelper.Page;
 
+import java.util.Date;
 import java.util.List;
 
 public interface StudentService {
 
     //用户列表
-    public List<Student> selectAll();
+    public List<Student> getStudentList();
 
     //id 查询
-    public List<Student> selectByPrimaryKey(long id);
+    public Student findById(Integer id);
 
-    //name 查询
-    public  List<Student> selectByName(String sname);
+    public void save(Student student);
 
-    //用于token
-    public Student findByStudentname(String sname, String st_pwd);
+    public void edit(Student student);
 
-    //用于token
-    public Student findStudentById(String sNo);
+    public void delete(Integer id);
 
-    //通过部门名称查询用户
-   // public List<Student> selectByDept(String deptname);
+    //学号查询
+    public  List<Student> findBySno(Integer sno);
 
-    //多框精确查询
-  //  public List<Student> selectByOne(StudentDTO StudentDTO);
+ //   用于token
+    public Student findloginList(Integer sno, String stpwd);
 
-    //单框模糊查询
-    public List<Student> selectByAnyone(String anyone);
+    //通过账号修改密码
+    public int updatePassword(String newpwd,String oldpwd,Integer sno);
 
-    //用户添加
-    public int  insert(StudentDTO StudentDTO);
+    //修改姓名
+     public int updateSname(String sname,Integer id);
 
-    //用户删除
-    public int deleteByPrimaryKey(long id);
+    //修改性别
+    public int updateGender(String gender,Integer id);
 
-    //用户批量删除
-   // public Integer deleteMany(String ids);
+    //修改电话
+    public int updatePhone(String phone,Integer id);
 
-    //用户修改
-    public int updateByPrimaryKeySelective(StudentDTO StudentDTO);
 
-    //返回用户数
-    public int selectStudentListCount();
 
-    //返回用户男女占比
-    public double selectStudentGenderCount();
-
-    //返回数组分页方法：第一种
-    public List<Student> queryStudentByArray(int currPage, int pageSize);
-
-    //第二种分页，在查询时分页
-    public PageBean<Student> queryStudentBySql(PageDTO pageDTO);
-
-    //PageHelper分页
-    public Page<Student> getStudentList(Integer pageNum, Integer pageSize);
-
-    //登录验证
+   // 登录验证
     public int tologin(PwdDTO pwdDTO);
 
-    //退出登录
-    public void quit(String name);
+    //查询未交名单
+    public  List<Student> findNottestStudent(Integer kcid, Integer testid);
 
-    //通过用户名称或编号或账号修改密码
-    public int updateByStudentName(PwdDTO pwdDTO);
-
-    //通过部门名称查询部门id
-  //  public Dept findDId(String deptname);
-
+    //缺勤名单
+    public  List<Student> findNotKaoqinStudent(Integer kcid, Date kqdate);
 }

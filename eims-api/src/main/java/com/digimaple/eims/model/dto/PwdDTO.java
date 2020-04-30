@@ -7,30 +7,30 @@ import javax.validation.constraints.Size;
 @Data
 public class PwdDTO {
 
-    @Size(min = 2,max = 10,message = "姓名或账号不能小于2大于10")
-    private String sname;
+
+    private Integer sno;
 
     @Size(min = 5, max = 15,message = "密码长度只能在5~15之间" )
-    private String stpwd;
+    private String password;
 
-    public String getSname() {
-        return sname;
+    public Integer getSno() {
+        return sno;
     }
 
-    public void setSname(String sname) {
-        this.sname = sname;
+    public void setSno(Integer sno) {
+        this.sno = sno;
     }
 
-    public String getStpwd() {
-        return stpwd;
+    public String getPassword() {
+        return password;
     }
 
-    public void setStpwd(String stpwd) {
-        this.stpwd = stpwd;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public PwdDTO(String sname, String stpwd) {
-        this.sname = sname;
-        this.stpwd = stpwd;
+    public PwdDTO(Integer sno, String password) {
+        this.sno = sno;
+        this.password = password;
     }
 }

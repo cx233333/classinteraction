@@ -1,128 +1,124 @@
 package com.digimaple.eims.model;
 
-import cn.afterturn.easypoi.excel.annotation.Excel;
-import lombok.Data;
-import org.hibernate.validator.constraints.Length;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import javax.validation.groups.Default;
-
-@Data
+@Entity
 public class Student {
 
-  @Excel(name = "stid", orderNum = "0")
-  private Integer stid;
+  @Id
+  @GeneratedValue
+  private Integer id;
 
-  @Excel(name = "学号", orderNum = "1")
-  private Integer sNo;
+  @Column(nullable = false, unique = true)
+  private Integer sno;
 
-  @Excel(name = "姓名", orderNum = "2")
-  @NotNull(message = "姓名不能为空", groups = Default.class)
+  @Column(nullable = false, unique = true)
   private String sname;
 
-  @Excel(name = "电话", orderNum = "3")
-  @Length(min = 11, max = 11, message = "电话长度必须为11位")
-  private String phone;
-
-  @Excel(name = "性别", orderNum = "4")
+  @Column(nullable = false, unique = false)
+  private String password;
+  @Column(nullable = false, unique = false)
   private String gender;
-
-  @Excel(name = "专业", orderNum = "5")
+  @Column(nullable = false, unique = false)
+  private String phone;
+  @Column(nullable = false, unique = false)
   private String classname;
-
-  @Excel(name = "学院", orderNum = "6")
-  @NotNull(message = "学院不能为空", groups = Default.class)
+  @Column(nullable = false, unique = false)
   private String xyname;
+  @Column(nullable = false, unique = false)
+  private String role;
+  @Column(nullable = false, unique = false)
+  private String status;
 
-
-  @Excel(name = "密码", orderNum = "7")
-  @Size(min = 5, max = 20, message = "密码长度只能在5~20之间", groups = Default.class)
-  private String stpwd;
-
-  @Excel(name = "角色类型", orderNum = "8")
-  private Integer types;
-
-  @Excel(name = "登录状态", orderNum = "9")
-  private Integer statuss;
-
-  public Integer getStid() {
-    return stid;
+  public Integer getId() {
+    return id;
   }
 
-  public void setStid(Integer stid) {
-    this.stid = stid;
+  public Student setId(Integer id) {
+    this.id = id;
+    return this;
   }
 
-  public Integer getsNo() {
-    return sNo;
+  public Integer getSno() {
+    return sno;
   }
 
-  public void setsNo(Integer sNo) {
-    this.sNo = sNo;
+  public void setSno(Integer sno) {
+    this.sno = sno;
   }
 
   public String getSname() {
     return sname;
   }
 
-  public void setSname(String sname) {
+  public Student setSname(String sname) {
     this.sname = sname;
+    return this;
   }
 
-  public String getPhone() {
-    return phone;
+  public String getPassword() {
+    return password;
   }
 
-  public void setPhone(String phone) {
-    this.phone = phone;
+  public Student setPassword(String password) {
+    this.password = password;
+    return this;
   }
 
   public String getGender() {
     return gender;
   }
 
-  public void setGender(String gender) {
+  public Student setGender(String gender) {
     this.gender = gender;
+    return this;
+  }
+
+  public String getPhone() {
+    return phone;
+  }
+
+  public Student setPhone(String phone) {
+    this.phone = phone;
+    return this;
   }
 
   public String getClassname() {
     return classname;
   }
 
-  public void setClassname(String classname) {
+  public Student setClassname(String classname) {
     this.classname = classname;
+    return this;
   }
 
   public String getXyname() {
     return xyname;
   }
 
-  public void setXyname(String xyname) {
+  public Student setXyname(String xyname) {
     this.xyname = xyname;
+    return this;
   }
 
-  public String getStpwd() {
-    return stpwd;
+  public String getRole() {
+    return role;
   }
 
-  public void setStpwd(String stpwd) {
-    this.stpwd = stpwd;
+  public Student setRole(String role) {
+    this.role = role;
+    return this;
   }
 
-  public Integer getTypes() {
-    return types;
+  public String getStatus() {
+    return status;
   }
 
-  public void setTypes(Integer types) {
-    this.types = types;
-  }
-
-  public Integer getStatuss() {
-    return statuss;
-  }
-
-  public void setStatuss(Integer statuss) {
-    this.statuss = statuss;
+  public Student setStatus(String status) {
+    this.status = status;
+    return this;
   }
 }

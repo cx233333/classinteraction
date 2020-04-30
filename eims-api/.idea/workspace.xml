@@ -2,11 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6826d0bd-8762-4b47-9674-661105f0b1eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/KaoQinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/XuanKeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/CourseFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/FilePrimaryKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/KaoQin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/KaoQinPrimaryKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/StudentTestPrimaryKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/XuanKe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/XuanKePrimaryKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/TeacherPwdDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/updatePwdDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/updateTeacherPwdDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/CourseFileView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/CourseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/KaoQinDateView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/KaoQinView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/StudentCourseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/StudentTestView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/XuanKeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/CourseFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/KaoQinRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/StudentTestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/TeacherRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/TestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/XuanKeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/CourseFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/KaoQinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentTestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/XuanKeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/CourseFileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/KaoQinServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentTestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/TestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/XuanKeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/mapper/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/PwdDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/PwdDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/sqlModel/CheckCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/sqlModel/CheckFind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/sqlModel/DelListComplex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/sqlModel/GoodsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/sqlModel/ListBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/sqlModel/ListComplex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/sqlModel/OutTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/urpModel/Power.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/mapper/StudentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/dto/PwdDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/dto/PwdDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/dto/PwdDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/dto/PwdDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/CheckCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/CheckCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/CheckFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/CheckFind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/DelListComplex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/DelListComplex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/GoodsList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/GoodsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/ListBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/ListBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/ListComplex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/ListComplex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/OutTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/sqlModel/OutTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/urpModel/Power.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/model/urpModel/Power.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/TokenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/digimaple/eims/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,28 +117,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/KaoQinDateView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="210">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/StandardWrapperValve.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/KaoQin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="342" selection-start-line="342" selection-end-line="342" />
+            <state relative-caret-position="1610">
+              <caret line="55" column="17" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/KaoQinService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="910">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,10 +152,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/KaoQinServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="1610">
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/KaoQinController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="118" column="62" lean-forward="true" selection-start-line="114" selection-start-column="8" selection-end-line="118" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Teacher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentTestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="108" selection-start-line="108" selection-end-line="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/TeacherController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1015">
+              <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,75 +220,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="14630">
               <caret line="517" column="27" selection-start-line="517" selection-start-column="27" selection-end-line="517" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="391" column="19" selection-start-line="391" selection-start-column="19" selection-end-line="391" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="508" selection-start-line="508" selection-end-line="508" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="243" column="86" selection-start-line="243" selection-start-column="83" selection-end-line="243" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/mapper/StudentMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="60" column="33" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>findBy</find>
-      <find>user</find>
-      <find>User</find>
-      <find>tologin</find>
-      <find>登录</find>
-      <find>登</find>
-      <find>200</find>
-      <find>登录失败,账号或密码错误</find>
-      <find>inser</find>
-      <find>selectStudentListCount</find>
-      <find>tol</find>
       <find>用户列表</find>
       <find>updateByStudentName</find>
       <find>xy_name</find>
@@ -144,13 +249,38 @@
       <find>st_pwd</find>
       <find>sta</find>
       <find>pwd</find>
+      <find>inser</find>
+      <find>insert</find>
+      <find>User</find>
+      <find>File</find>
+      <find>KaoQin</find>
+      <find>@RequestParam</find>
+      <find>RequestParam</find>
+      <find>Student</find>
+      <find>add</find>
+      <find>findbyid</find>
+      <find>tolog</find>
+      <find>updaten</find>
+      <find>findKcidStid</find>
+      <find>Course</find>
+      <find>用户</find>
+      <find>e.kcid=3</find>
+      <find>jsid</find>
+      <find>cou</find>
     </findStrings>
     <replaceStrings>
-      <replace>Student</replace>
       <replace>student</replace>
       <replace>xyname</replace>
       <replace>type</replace>
       <replace>stid</replace>
+      <replace>KaoQin</replace>
+      <replace>Course</replace>
+      <replace>Student</replace>
+      <replace>File</replace>
+      <replace>CourseFile</replace>
+      <replace>Teacher</replace>
+      <replace>Test</replace>
+      <replace>测试</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -159,29 +289,70 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-mysql.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/StudentDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/interceptor/AuthenticationInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/annotation/PassToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/annotation/StudentLoginToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/config/InterceptorConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentServiceImpl.java" />
-        <option value="E:/eims/eims-api/src/main/java/com/digimaple/eims/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TokenService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/XuanKeView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/CourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/CourseView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/CourseRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/StudentPost.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/StudentTestKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/StudentTestPrimaryKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/TestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/StudentTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/StudentTestView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/CourseFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/CourseFileView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/CourseFileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/CourseFileRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/CourseFileServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/PwdDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/mapper/StudentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/updatePwdDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/XuanKeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/XuanKeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/XuanKeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/XuanKeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/TeacherRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TeacherService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/TestRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/TestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/StudentTestRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentTestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentTestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentTestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/KaoQinPrimaryKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/KaoQin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/KaoQinView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/StudentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/KaoQinService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/KaoQinServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/KaoQinDateView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/KaoQinRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/KaoQinController.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="y" value="111" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1932" />
     <option name="height" value="999" />
   </component>
@@ -191,7 +362,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -253,29 +424,7 @@
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="digimaple" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="eims" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="annotation" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="eims" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="eims" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="digimaple" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="eims" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="eims" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="eims" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="digimaple" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="eims" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="eims" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -297,6 +446,17 @@
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="digimaple" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="eims" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="repository" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="eims" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="eims" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="digimaple" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eims" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -304,21 +464,18 @@
               <item name="eims" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="eims" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="eims" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="digimaple" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eims" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="impl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,7 +487,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="E:/IDE/androidSDK" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/ketanghudong/eims-api" />
+    <property name="last_opened_file_path" value="E:/eims/eims-api" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -346,13 +503,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.digimaple.eims.annotation" />
+      <recent name="com.digimaple.eims.model.view" />
+      <recent name="com.digimaple.eims.controller" />
       <recent name="com.digimaple.eims.service.impl" />
       <recent name="com.digimaple.eims.service" />
-      <recent name="com.digimaple.eims.controller" />
-      <recent name="com.digimaple.eims.model.dto" />
+      <recent name="com.digimaple.eims.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\class\eims-api\src\main\resources" />
       <recent name="E:\class\eims-api\src\main\resources\mapper" />
     </key>
   </component>
@@ -393,33 +551,71 @@
       <workItem from="1586242624027" duration="2186000" />
       <workItem from="1586247103689" duration="596000" />
       <workItem from="1586247953825" duration="1076000" />
-      <workItem from="1586332434036" duration="22924000" />
+      <workItem from="1586332434036" duration="24787000" />
+      <workItem from="1586404180562" duration="25759000" />
+      <workItem from="1586505176228" duration="7409000" />
+      <workItem from="1586581114456" duration="16245000" />
+      <workItem from="1586661507958" duration="32356000" />
+      <workItem from="1586755353130" duration="19261000" />
+      <workItem from="1586782881361" duration="4857000" />
+      <workItem from="1586839174212" duration="2038000" />
+      <workItem from="1586844326580" duration="2172000" />
+      <workItem from="1586848790291" duration="15961000" />
+      <workItem from="1586947484872" duration="9417000" />
+      <workItem from="1587010306017" duration="10494000" />
+      <workItem from="1587037836840" duration="1913000" />
+      <workItem from="1587048121741" duration="2223000" />
+      <workItem from="1587110140745" duration="14099000" />
+      <workItem from="1587184161739" duration="17335000" />
+      <workItem from="1587288797081" duration="877000" />
+      <workItem from="1587355312849" duration="4744000" />
+      <workItem from="1587374275757" duration="3287000" />
+      <workItem from="1587385462796" duration="7610000" />
+      <workItem from="1587459447769" duration="685000" />
+      <workItem from="1587468382397" duration="656000" />
+      <workItem from="1587543047403" duration="10806000" />
+      <workItem from="1587616785015" duration="4788000" />
+      <workItem from="1587735877823" duration="802000" />
+      <workItem from="1587961998302" duration="1519000" />
+      <workItem from="1587970482693" duration="5884000" />
+      <workItem from="1588046035939" duration="15696000" />
+      <workItem from="1588075242648" duration="2559000" />
+      <workItem from="1588225119659" duration="568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33063000" />
+    <option name="totallyTimeSpent" value="276946000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25107297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.66591424" visible="true" weight="0.23980686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.3340858" side_tool="true" visible="true" weight="0.23980686" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295711" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45936796" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39164785" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295711" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3295711" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295711" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3295711" />
@@ -445,34 +641,40 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java</url>
-          <line>89</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java</url>
-          <line>64</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/FileController.java</url>
+          <line>172</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/FileController.java</url>
+          <line>173</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/XuanKeController.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/XuanKeController.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/XuanKeController.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/XuanKeController.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -481,315 +683,22 @@
     <SUITE FILE_PATH="coverage/eims$EimsApplication.ic" NAME="EimsApplication Coverage Results" MODIFIED="1586338627978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/sqlModel/ListComplex.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ketanghudong/eims-api/src/main/java/com/digimaple/eims/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" selection-start-line="30" selection-start-column="1" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" selection-start-line="11" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4445">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7140">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="27" column="44" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="189" column="46" lean-forward="true" selection-start-line="189" selection-start-column="46" selection-end-line="189" selection-end-column="46" />
-          <folding>
-            <element signature="e#4947#4948#0" expanded="true" />
-            <element signature="e#5014#5015#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2345">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ketanghudong/eims-api/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="60" column="18" selection-start-line="56" selection-start-column="11" selection-end-line="60" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/ketanghudong/eims-api/src/main/java/com/digimaple/eims/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://E:/ketanghudong/eims-api/src/main/java/com/digimaple/eims/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://E:/eims/eims-api/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/PageDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-372">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/eims/eims-api/src/main/java/com/digimaple/eims/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+        <state relative-caret-position="980">
+          <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/interceptor/AuthenticationInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/CourseFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/config/InterceptorConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/annotation/UserLoginToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="13" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/StudentDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/annotation/AbsoluteCancelToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/annotation/PassToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/http/ResponseEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="64" column="23" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/interceptor/AuthenticationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2914">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/annotation/StudentLoginToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/utils/MD5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-          <folding>
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1600#1601#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1668#1669#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#1969#1970#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2116#2117#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="e#2215#2216#0" expanded="true" />
-            <element signature="e#2237#2238#0" expanded="true" />
-            <element signature="e#2278#2279#0" expanded="true" />
-            <element signature="e#2306#2307#0" expanded="true" />
-            <element signature="e#2339#2340#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2408#2409#0" expanded="true" />
-            <element signature="e#2440#2441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/PwdDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-774">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-mysql.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/EimsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TokenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+        <state relative-caret-position="159">
+          <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -798,123 +707,453 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="665">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/CourseFileView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="280">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21.jar!/org/apache/tomcat/websocket/server/WsFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="315">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/CourseFileRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/FormContentFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/HiddenHttpMethodFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/CharacterEncodingFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/StandardWrapperValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="342" selection-start-line="342" selection-end-line="342" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="517" column="27" selection-start-line="517" selection-start-column="27" selection-end-line="517" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="391" column="19" selection-start-line="391" selection-start-column="19" selection-end-line="391" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="508" selection-start-line="508" selection-end-line="508" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="243" column="86" selection-start-line="243" selection-start-column="83" selection-end-line="243" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/mapper/StudentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="33" />
+        <state relative-caret-position="665">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/CourseFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/CourseFileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/XuanKeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/PwdDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/dto/updatePwdDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/XuanKeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/XuanKeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="141" column="42" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/XuanKeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="25" column="88" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/CourseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="937">
+          <caret line="506" selection-start-line="506" selection-end-line="506" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/XuanKeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="72" column="80" selection-start-line="72" selection-start-column="80" selection-end-line="72" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/TeacherRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2555">
+          <caret line="87" column="81" selection-start-line="87" selection-start-column="81" selection-end-line="87" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/TestRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/TestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/StudentTestRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentTestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentTestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/KaoQinPrimaryKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/KaoQinView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="58" column="67" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/StudentTestView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="516" selection-start-line="516" selection-end-line="516" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="217">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/eims/eims-api/src/main/java/com/digimaple/eims/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="133" column="25" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3710">
+          <caret line="127" column="61" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/StudentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="42" column="99" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/repository/KaoQinRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/view/KaoQinDateView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/KaoQin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/KaoQinService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/service/impl/KaoQinServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14630">
+          <caret line="517" column="27" selection-start-line="517" selection-start-column="27" selection-end-line="517" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/model/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/KaoQinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="118" column="62" lean-forward="true" selection-start-line="114" selection-start-column="8" selection-end-line="118" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="753">
+          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/StudentTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/digimaple/eims/controller/TeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1015">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
